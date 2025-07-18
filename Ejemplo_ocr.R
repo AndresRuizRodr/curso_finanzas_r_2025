@@ -42,4 +42,5 @@ pngfile <- pdftools::pdf_convert('https://jeroen.github.io/images/ocrscan.pdf', 
 text <- tesseract::ocr(pngfile)
 cat(text)
 
-
+renv::status()
+renv::snapshot()
